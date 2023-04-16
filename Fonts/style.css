@@ -1,0 +1,30 @@
+﻿@import url(../Styles/fontiran.css); /* لینک فایلی که وظیفه بارگذاری فونت ها را برعهده دارد */
+
+.text-thin {
+	font-weight: 100;
+}
+.text-UltraLight {
+	font-weight: 200;
+}
+.text-light {
+	font-weight: 300;
+}
+.text-regular {
+	font-weight: normal;
+}
+.text-medium {
+	font-weight: 500;
+}
+.text-demibold {
+	font-weight: 600;
+}
+.text-bold {
+	font-weight: bold;
+}
+
+.text-extrabold {
+	font-weight: 800;
+}
+.text-black {
+	font-weight: 900;
+}

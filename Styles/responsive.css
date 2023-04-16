@@ -1,0 +1,132 @@
+.container {
+    width: 100%;
+    padding-right: 5.5rem;
+    padding-left: 5.5rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (max-width: 280px) {
+    .header {
+        padding-bottom: 6.5rem;
+    }
+
+    .header-content__link {
+        font-size: 1.3rem;
+    }
+
+    .nav-mobile {
+        max-width: 58%;
+    }
+
+    .mobile-menu__button {
+        font-size: 1.3rem;
+    }
+
+    .header-content__link {
+        width: 17rem;
+    }
+
+    .mobile-menu__title {
+        font-size: 2.3rem;
+    }
+
+    .fold-container {
+        padding-left: 0;
+        padding-right: 0;
+        width: 26rem;
+    }
+
+    .services__item {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 360px) {
+    .header {
+        padding-bottom: 6.5rem;
+    }
+
+    .nav-mobile {
+        max-width: 67%;
+    }
+
+    .mobile-menu__link {
+        font-size: 1.5rem;
+    }
+
+    .mobile-menu__button {
+        font-size: 1.5rem;
+    }
+
+    .item__link {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 361px) {
+    .mobile-menu__link {
+        font-size: 100%;
+    }
+
+    .mobile-menu__button {
+        font-size: 100%;
+    }
+
+    .header {
+        padding-bottom: 8rem;
+    }
+
+    .nav-mobile {
+        max-width: 100%;
+    }
+
+    .item__link {
+        font-size: inherit;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-content__title {
+        font-size: 10vw;
+    }
+
+    /* .header-content__caption {
+        width: 100%;
+    } */
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+    .menu {
+        display: flex;
+    }
+
+    .header__links {
+        display: block;
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+
+    .nav__btn {
+        display: none;
+    }
+
+    .header-content {
+        margin-top: 2.5rem;
+    }
+}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
+@media (min-width: 1600px) {}
+
+@media (min-width: 1900px) {}

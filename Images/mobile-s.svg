@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="90"
+   height="90"
+   viewBox="0 0 8.2125 8.2125"
+   version="1.1"
+   id="svg1735"
+   sodipodi:docname="mobile-s.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview1737"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.005"
+     inkscape:cx="400"
+     inkscape:cy="400.49751"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1735" />
+  <title
+     id="title1716">design-and-ux/mobile-first</title>
+  <desc
+     id="desc1718">Created with Sketch.</desc>
+  <defs
+     id="defs1720" />
+  <g
+     id="design-and-ux/mobile-first"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd"
+     transform="scale(0.1125)">
+    <g
+       id="container"
+       transform="translate(2,2)"
+       fill="#ffffff"
+       fill-rule="nonzero"
+       stroke="#273c47"
+       stroke-width="2">
+      <rect
+         id="mask"
+         x="-1"
+         y="-1"
+         width="71"
+         height="71"
+         rx="14" />
+    </g>
+    <g
+       id="emergency-call"
+       transform="translate(16,11)"
+       fill-rule="nonzero">
+      <path
+         d="M 9.58125,26.88875 C 3.6225,21.5075 0,17.12375 0,11.50625 0,5.2675 4.2875,0 10.5,0 17.77125,0 21,6.615 21,6.615 21,6.615 24.22875,0 31.5,0 37.7125,0 42,5.2675 42,11.50625 c 0,5.6175 -3.6225,10.00125 -9.58125,15.3825 z"
+         id="Shape"
+         fill="#ff5364" />
+      <path
+         d="m 13.95625,10.5 h -1.75 c -1.449747,0 -2.625,1.175253 -2.625,2.625 V 45.5 c -7.72e-4,0.218268 0.025682,0.43578 0.07875,0.6475 0.095953,0.392105 0.2850478,0.755288 0.55125,1.05875 0.499192,0.582536 1.227836,0.918095 1.995,0.91875 h 17.5875 c 1.449747,0 2.625,-1.175253 2.625,-2.625 V 13.125 c 0.0029,-0.626167 -0.220843,-1.232241 -0.63,-1.70625 C 31.614854,11.217036 31.411273,11.04296 31.185,10.9025 30.768961,10.638763 30.28634,10.499136 29.79375,10.5 Z"
+         id="path1725"
+         fill="#2980ba" />
+      <path
+         d="M 31.185,10.9025 C 26.635,12.6 10.5,20.32625 9.66,44.3975 9.6069322,44.18578 9.580478,43.968268 9.58125,43.75 V 13.125 c 0,-1.449747 1.175253,-2.625 2.625,-2.625 h 1.75 l 2.5025,2.66875 C 16.954329,13.699948 17.648523,14.001083 18.375,14 h 5.25 c 0.726476,0.0011 1.420671,-0.300052 1.91625,-0.83125 L 28.04375,10.5 h 1.75 c 0.49259,-8.64e-4 0.975211,0.138763 1.39125,0.4025 z"
+         id="path1727"
+         fill="#3b97d3" />
+      <path
+         d="m 32.41875,43.75 v 4.375 c 0,1.449747 -1.175253,2.625 -2.625,2.625 h -17.5875 c -1.449747,0 -2.625,-1.175253 -2.625,-2.625 V 43.75 c 0,1.449747 1.175253,2.625 2.625,2.625 h 17.5875 c 1.449747,0 2.625,-1.175253 2.625,-2.625 z"
+         id="path1729"
+         fill="#3f5c6c" />
+      <path
+         d="m 28.04375,10.5 -2.5025,2.66875 C 25.045671,13.699948 24.351476,14.001083 23.625,14 h -5.25 c -0.726477,0.0011 -1.420671,-0.300052 -1.91625,-0.83125 L 13.95625,10.5 Z"
+         id="path1731"
+         fill="#3f5c6c" />
+    </g>
+  </g>
+  <metadata
+     id="metadata1739">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>design-and-ux/mobile-first</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
