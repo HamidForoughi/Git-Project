@@ -31,15 +31,14 @@
         font-size: 2.3rem;
     }
 
-    .fold-container {
-        padding-left: 0;
-        padding-right: 0;
-        width: 26rem;
-    }
-
     .services__item {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .store__item {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
@@ -91,15 +90,18 @@
     .header-content__title {
         font-size: 10vw;
     }
-
-    /* .header-content__caption {
-        width: 100%;
-    } */
 }
 
 @media (min-width: 576px) {}
 
 @media (min-width: 768px) {}
+
+@media (max-width: 991px) {
+    .container {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+}
 
 @media (min-width: 992px) {
     .menu {
