@@ -90,6 +90,20 @@
     .header-content__title {
         font-size: 10vw;
     }
+
+    .footer__right {
+        display: none;
+    }
+
+    .header {
+        border-top-left-radius: 4rem;
+        border-top-right-radius: 4rem;
+    }
+
+    .footer {
+        border-top-left-radius: 4rem;
+        border-top-right-radius: 4rem;
+    }
 }
 
 @media (min-width: 576px) {}
@@ -100,6 +114,12 @@
     .container {
         padding-right: 1.5rem;
         padding-left: 1.5rem;
+    }
+
+    .footer__right {
+        justify-content: center;
+        margin-bottom: 3rem;
+        text-align: center;
     }
 }
 
@@ -124,8 +144,12 @@
         margin-top: 2.5rem;
     }
 
-    #scroll {
-        display: block;
+    .footer__scroll {
+        display: flex;
+    }
+
+    .footer__wrapper {
+        display: flex;
     }
 }
 
