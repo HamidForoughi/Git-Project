@@ -123,6 +123,10 @@
     .header-content {
         margin-top: 2.5rem;
     }
+
+    #scroll {
+        display: block;
+    }
 }
 
 @media (min-width: 1200px) {}
