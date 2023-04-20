@@ -66,15 +66,6 @@ a {
     transition: all 110ms;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: var(--fontcolor);
-}
-
 /*
 ============================================
 Navbar Position and Color
@@ -601,7 +592,7 @@ Footer
 .footer__title {
     color: var(--whait);
     font-weight: bold;
-    font-size: 1.7rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -651,6 +642,7 @@ Footer Left
 .footer__description {
     margin-bottom: 2rem;
     text-align: justify;
+    color: var(--whait);
 }
 
 .footer-social-media {
