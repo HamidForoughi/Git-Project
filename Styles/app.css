@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root {
     --bgcolor: #F2F2F2;
     --fontcolor: #333333;
@@ -17,6 +24,7 @@
 }
 
 html {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -25,6 +33,7 @@ html {
 *,
 *:after,
 *:before {
+    -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
 
@@ -57,12 +66,18 @@ a {
     border: 1.8px solid;
     padding: 1rem 4rem;
     border-radius: 1.5rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     color: var(--black);
     margin-top: 3rem;
     width: 19rem;
     font-weight: 600;
+    -webkit-transition: all 110ms;
+    -o-transition: all 110ms;
     transition: all 110ms;
 }
 
@@ -75,7 +90,11 @@ Navbar Position and Color
 .header {
     width: auto;
 
-    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../Images/digital_marketing_Store.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.85)), to(rgba(0, 0, 0, 0.85))), url("../Images/digital_marketing_Store-min.jpg");
+
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../Images/digital_marketing_Store-min.jpg");
+
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../Images/digital_marketing_Store-min.jpg");
     background-position: center;
     background-size: cover;
     border-bottom-left-radius: 6rem;
@@ -84,8 +103,14 @@ Navbar Position and Color
 }
 
 .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 1.5rem 0;
     height: 10rem;
@@ -98,8 +123,14 @@ Navbar: Desktop Menu Items and Logo
 */
 
 .nav__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -125,6 +156,8 @@ Navbar: Desktop Menu Items and Logo
 
 .menu__item__link {
     color: var(--whait);
+    -webkit-transition: color 100ms ease-in;
+    -o-transition: color 100ms ease-in;
     transition: color 100ms ease-in;
 }
 
@@ -147,6 +180,8 @@ Navbar: Desktop Menu Items and Logo
     height: 0.3rem;
     border-radius: 10rem;
     background-color: var(--navColor);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
     z-index: 1;
     margin: 0 auto;
@@ -166,6 +201,8 @@ Navbar: Mobile Menu Items and Buttons (Sign in/Out , Basket)
     bottom: 0;
     width: 25rem;
     padding: 2.2rem;
+    -webkit-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
     transition: all 250ms ease-in-out;
     z-index: 2;
 }
@@ -195,6 +232,8 @@ Navbar: Mobile Menu Items and Buttons (Sign in/Out , Basket)
 .mobile-menu__link {
     color: var(--whait);
     position: relative;
+    -webkit-transition: all 130ms;
+    -o-transition: all 130ms;
     transition: all 130ms;
 }
 
@@ -220,6 +259,8 @@ Navbar: Mobile Menu Items and Buttons (Sign in/Out , Basket)
 }
 
 .mobile-menu__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -227,6 +268,8 @@ Navbar: Mobile Menu Items and Buttons (Sign in/Out , Basket)
     color: var(--whait);
     border: 1.8px solid var(--whait);
     padding: 1rem;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
     text-align: center;
     margin-left: 0.17rem;
@@ -263,6 +306,8 @@ Navbar: Desktop Buttons (Sign in/Out , Basket)
     border: 1.8px solid var(--navColor);
     padding: 1rem 2rem;
     border-radius: 1.5rem;
+    -webkit-transition: all 110ms;
+    -o-transition: all 110ms;
     transition: all 110ms;
 }
 
@@ -286,8 +331,14 @@ Navbar: Mobile Menu Button Design and  Animation
     width: 5.5rem;
     height: 5.5rem;
     border-radius: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
 }
@@ -299,6 +350,8 @@ Navbar: Mobile Menu Button Design and  Animation
     background-color: var(--navColor);
     border-radius: 5rem;
     position: relative;
+    -webkit-transition: all 150ms ease-in-out;
+    -o-transition: all 150ms ease-in-out;
     transition: all 150ms ease-in-out;
 }
 
@@ -310,6 +363,8 @@ Navbar: Mobile Menu Button Design and  Animation
     height: 0.3rem;
     background-color: var(--navColor);
     border-radius: 5rem;
+    -webkit-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
     transition: all 200ms ease-in-out;
 }
 
@@ -326,10 +381,14 @@ Navbar: Mobile Menu Button Design and  Animation
 }
 
 .nav__btn--open .nav__btn-line::before {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    -ms-transform: translateY(8px) rotate(45deg);
     transform: translateY(8px) rotate(45deg);
 }
 
 .nav__btn--open .nav__btn-line::after {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    -ms-transform: translateY(-8px) rotate(-45deg);
     transform: translateY(-8px) rotate(-45deg);
 }
 
@@ -360,6 +419,8 @@ Header Content
 }
 
 .header-content__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-right: auto;
     margin-left: auto;
@@ -388,7 +449,10 @@ Services
 */
 
 .services {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-left: -1rem;
     margin-right: -1rem;
@@ -400,14 +464,25 @@ Services
     width: 27rem;
     border-radius: 2rem;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-right: 1rem;
     margin-left: 1rem;
     margin-bottom: 2rem;
     padding: 0 4rem;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
 }
 
@@ -448,9 +523,16 @@ Store
     margin-bottom: 3rem;
     margin-left: -1rem;
     margin-right: -1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -462,6 +544,8 @@ Store
     margin-right: 1rem;
     margin-left: 1rem;
     width: 27rem;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
     overflow: hidden;
 }
@@ -469,12 +553,15 @@ Store
 .item__banner {
     position: relative;
     overflow: hidden;
+    -webkit-transition: all 100ms;
+    -o-transition: all 100ms;
     transition: all 100ms;
 }
 
 .item__img {
     width: 100%;
     height: 100%;
+    -o-object-fit: contain;
     object-fit: contain;
     overflow: hidden;
 }
@@ -485,8 +572,14 @@ Store
     top: 1.5rem;
     right: 1.5rem;
     border-radius: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 4rem;
     height: 4rem;
@@ -527,6 +620,7 @@ Store
     color: var(--fontcolor);
     font-weight: bold;
     white-space: nowrap;
+    -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     overflow: hidden;
 }
@@ -537,6 +631,7 @@ Store
     margin-bottom: 3rem;
     color: var(--fontcolor);
     white-space: nowrap;
+    -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     overflow: hidden;
     direction: ltr;
@@ -586,6 +681,8 @@ Footer
 
 .footer__wrapper {
     display: block;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -595,6 +692,7 @@ Footer
     font-size: 2rem;
     margin-bottom: 1rem;
     white-space: nowrap;
+    -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     overflow: hidden;
 }
@@ -613,12 +711,16 @@ Footer
     position: absolute;
     top: -2.5rem;
     background-color: var(--whait);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     border-radius: 1.5rem;
 }
 
-.footer > .container {
+.footer>.container {
     padding-top: 5rem;
     position: relative;
 }
@@ -635,9 +737,7 @@ Footer Left
     margin-right: auto;
 }
 
-.footer-content {
-
-}
+.footer-content {}
 
 .footer__description {
     margin-bottom: 2rem;
@@ -645,17 +745,11 @@ Footer Left
     color: var(--whait);
 }
 
-.footer-social-media {
+.footer-social-media {}
 
-}
+.footer-social-media__link {}
 
-.footer-social-media__link {
-
-}
-
-.footer-social-media__img {
-
-}
+.footer-social-media__img {}
 
 /*
 =================================================
@@ -664,19 +758,20 @@ Footer Right
 */
 
 .footer__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .footer-list {
     width: 15rem;
-    
-}
-.footer-pages {
 
 }
-.footer-pages__item {
 
-}
+.footer-pages {}
+
+.footer-pages__item {}
+
 .footer-pages__link {
     color: var(--whait)
 }
