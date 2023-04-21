@@ -35,14 +35,6 @@ body {
     background-color: var(--bgcolor);
 }
 
-#scroll {
-    height: 0.3rem;
-    background-color: var(--navColor);
-    position: fixed;
-    z-index: 99;
-    border-radius: 1rem;
-}
-
 /*
 ============================================
 Components
