@@ -53,7 +53,7 @@ a {
     justify-content: center;
     color: var(--black);
     margin-top: 3rem;
-    width: 19rem;
+    max-width: 19rem;
     font-weight: 600;
     transition: all 110ms;
 }
@@ -545,6 +545,7 @@ Store
 .item__link {
     background-color: var(--bgcolor);
     border-color: var(--bgcolor);
+    margin-top: auto;
 }
 
 .item__link:hover {
