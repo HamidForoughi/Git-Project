@@ -67,7 +67,7 @@ Navbar Position and Color
 .header {
     width: auto;
 
-    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../Images/digital_marketing_Store-min.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../Images/Header/digital_marketing_Store-min.jpg");
     background-position: center;
     background-size: cover;
     border-bottom-left-radius: 6rem;
