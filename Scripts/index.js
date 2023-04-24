@@ -1,6 +1,6 @@
 const $ = document
 const customScroll = $.getElementById('scroll')
-const navBtn = $.querySelector('.nav__btn')
+const navBtn = $.querySelector('.nav__button')
 const navMenu = $.querySelector('.nav-mobile')
 const menuItemLink = $.querySelectorAll('.menu__item__link')
 const svgEelem = $.querySelectorAll('.svg-fill')

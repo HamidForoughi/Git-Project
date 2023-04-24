@@ -2,7 +2,7 @@
     --bgcolor: #F2F2F2;
     --fontcolor: #333333;
     --linkcolor: #0077CC;
-    --btncolor: #FF9900;
+    --buttoncolor: #FF9900;
     --headercolor: #87CEFA;
     --maincolor: #FFFFFF;
     --footercolor: #0D0106;
@@ -45,7 +45,7 @@ a {
     text-decoration: none;
 }
 
-.btn {
+.button {
     border: 1.8px solid;
     padding: 1rem 4rem;
     border-radius: 1.5rem;
@@ -127,7 +127,7 @@ Navbar: Desktop Menu Items and Logo
 }
 
 .menu__item__link:hover {
-    color: var(--btncolor);
+    color: var(--buttoncolor);
 }
 
 .menu__item__link--active {
@@ -206,7 +206,7 @@ Navbar: Mobile Menu Items and Buttons (Sign in/Out , Basket)
     width: 0;
     height: 0.3rem;
     border-radius: 5rem;
-    background-color: var(--btncolor);
+    background-color: var(--buttoncolor);
 }
 
 .mobile-menu__link:hover {
@@ -233,8 +233,8 @@ Navbar: Mobile Menu Items and Buttons (Sign in/Out , Basket)
 
 .mobile-menu__button:hover {
     color: var(--black);
-    border-color: var(--btncolor);
-    background-color: var(--btncolor);
+    border-color: var(--buttoncolor);
+    background-color: var(--buttoncolor);
 }
 
 /*
@@ -253,8 +253,8 @@ Navbar: Desktop Buttons (Sign in/Out , Basket)
 }
 
 .header__link:hover {
-    color: var(--btncolor);
-    border-color: var(--btncolor);
+    color: var(--buttoncolor);
+    border-color: var(--buttoncolor);
 }
 
 .header__link--border {
@@ -265,11 +265,11 @@ Navbar: Desktop Buttons (Sign in/Out , Basket)
 }
 
 .header__link--border:hover {
-    background-color: var(--btncolor);
+    background-color: var(--buttoncolor);
     color: var(--black);
 }
 
-.nav-btn-color {
+.nav-button-color {
     background-color: var(--navColor);
 }
 
@@ -279,7 +279,7 @@ Navbar: Mobile Menu Button Design and  Animation
 =================================================
 */
 
-.nav__btn {
+.nav__button {
     background-color: var(--whait);
     width: 5.5rem;
     height: 5.5rem;
@@ -290,7 +290,7 @@ Navbar: Mobile Menu Button Design and  Animation
     cursor: pointer;
 }
 
-.nav__btn-line {
+.nav__button-line {
     display: block;
     width: 3rem;
     height: 0.3rem;
@@ -300,8 +300,8 @@ Navbar: Mobile Menu Button Design and  Animation
     transition: all 150ms ease-in-out;
 }
 
-.nav__btn-line::before,
-.nav__btn-line::after {
+.nav__button-line::before,
+.nav__button-line::after {
     content: ' ';
     position: absolute;
     width: 3rem;
@@ -311,23 +311,23 @@ Navbar: Mobile Menu Button Design and  Animation
     transition: all 200ms ease-in-out;
 }
 
-.nav__btn-line::before {
+.nav__button-line::before {
     top: -0.8rem;
 }
 
-.nav__btn-line::after {
+.nav__button-line::after {
     top: 0.8rem;
 }
 
-.nav__btn--open .nav__btn-line {
+.nav__button--open .nav__button-line {
     background-color: transparent;
 }
 
-.nav__btn--open .nav__btn-line::before {
+.nav__button--open .nav__button-line::before {
     transform: translateY(8px) rotate(45deg);
 }
 
-.nav__btn--open .nav__btn-line::after {
+.nav__button--open .nav__button-line::after {
     transform: translateY(-8px) rotate(-45deg);
 }
 
@@ -362,8 +362,8 @@ Header Content
     display: flex;
     margin-right: auto;
     margin-left: auto;
-    background-color: var(--btncolor);
-    border-color: var(--btncolor);
+    background-color: var(--buttoncolor);
+    border-color: var(--buttoncolor);
 }
 
 .header-content__link:hover {
@@ -495,14 +495,14 @@ Store
 .item__icon-like {}
 
 .item__icon-like--fill {
-    fill: var(--btncolor);
+    fill: var(--buttoncolor);
     stroke: var(--whait);
 }
 
 .item__price {
     position: absolute;
     background-color: var(--whait);
-    color: var(--btncolor);
+    color: var(--buttoncolor);
     bottom: -1rem;
     left: 0;
     right: 0;
@@ -549,23 +549,23 @@ Store
 
 .item__link:hover {
     color: var(--fontcolor);
-    border-color: var(--btncolor);
-    background-color: var(--btncolor);
+    border-color: var(--buttoncolor);
+    background-color: var(--buttoncolor);
 }
 
-.store__btn {
+.store__button {
     background-color: transparent;
-    border-color: var(--btncolor);
-    color: var(--btncolor);
+    border-color: var(--buttoncolor);
+    color: var(--buttoncolor);
     display: block;
     margin-right: auto;
     margin-left: auto;
 }
 
-.store__btn:hover {
-    background-color: var(--btncolor);
+.store__button:hover {
+    background-color: var(--buttoncolor);
     color: var(--black);
-    border-color: var(--btncolor);
+    border-color: var(--buttoncolor);
 }
 
 /*
