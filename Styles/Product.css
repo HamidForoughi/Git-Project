@@ -1,0 +1,153 @@
+:root {
+    --bgcolor: #F2F2F2;
+    --fontcolor: #333333;
+    --linkcolor: #0077CC;
+    --buttoncolor: #FF9900;
+    --headercolor: #87CEFA;
+    --maincolor: #FFFFFF;
+    --footercolor: #0D0106;
+    --whait: #fff;
+    --black: #000;
+    --navColor: #673AB8;
+    --primaryFont: 'IRANSansX', sans-serif, Arial, Helvetica;
+    --a: #EFEFEF;
+    --b: #0071BC;
+    --c: #F5A623;
+    --copyRight-Color: #5d5b5b;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+body {
+    line-height: 1.6;
+    font-size: 1.6rem;
+    font-family: var(--primaryFont);
+    background-color: var(--bgcolor);
+}
+
+/*
+============================================
+Components
+============================================
+*/
+
+a {
+    text-decoration: none;
+}
+
+/*
+============================================
+Header
+============================================
+*/
+
+.header {
+    background: none;
+}
+
+.product-main {}
+
+.product-wrapper {
+    display: flex;
+    background-color: var(--whait);
+    align-items: flex-start;
+    padding: 0 5rem;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 7rem;
+    padding-top: 4rem;
+}
+
+.product-right {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    flex-grow: 1;
+}
+
+.product__img {
+    width: 100%;
+}
+
+.product-left {
+    flex-grow: 1;
+    margin: auto 0 auto 0;
+    width: 100%;
+}
+
+.product__title {
+    margin-bottom: 2rem;
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+.product__abstract-informations {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.product__attrebute {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+
+.product__attrebute-title {
+    margin-left: 1rem;
+}
+
+.product__abstract-text {
+    margin-right: 1rem;
+}
+
+.product__guarantee {
+    display: flex;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.product__guarantee-title {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: green
+}
+
+.product__price {
+    display: flex;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    align-items: center;
+}
+
+.product__price-title {
+    margin-left: 1rem;
+}
+
+.product__basket-button {
+    border: 1.8px solid;
+    padding: 1rem 0rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    margin-top: 1.3rem;
+    background-color: darkgreen;
+    border-color: darkgreen;
+    display: flex;
+}
+
+.product__basket-link {
+    color: var(--whait);
+    flex-grow: 1;
+}
