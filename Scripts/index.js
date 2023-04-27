@@ -3,6 +3,7 @@ const navBtn = $.querySelector('.nav__button')
 const navMenu = $.querySelector('.nav-mobile')
 const menuItemLink = $.querySelectorAll('.menu__item__link')
 const svgEelem = $.querySelectorAll('.svg-fill')
+const headerTitle = $.getElementById('app');
 
 navBtn.addEventListener('click', () => {
     navBtn.classList.toggle('nav__btn--open')
@@ -20,4 +21,15 @@ svgEelem.forEach((svg) => {
         svg.classList.toggle('item__icon-like--fill')
     })
 })
+
+const typewriter = new Typewriter(headerTitle, {
+    loop: false,
+    cursor: '',
+    delay: 60,
+});
+
+typewriter.typeString('دنیای دیجیتال در دستان شما')
+    .start();
+
+
 

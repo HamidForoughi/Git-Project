@@ -338,7 +338,7 @@ Header Content
 .header-content {
     text-align: center;
     padding-top: 15rem;
-    margin-top: 0!important;
+    margin-top: 0 !important;
 }
 
 .header-content__title {
@@ -448,7 +448,7 @@ Store
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .store__item {
@@ -458,14 +458,13 @@ Store
     margin-bottom: 2rem;
     margin-right: 1rem;
     margin-left: 1rem;
-    width: 27rem;
-    flex-grow: 1;
+    max-width: 28rem;
+    /* flex-grow: 1; */
     overflow: hidden;
 }
 
 .item__banner {
     position: relative;
-    overflow: hidden;
     transition: all 100ms;
 }
 
@@ -567,6 +566,29 @@ Store
     border-color: var(--buttoncolor);
 }
 
+.ih-item.square {
+    box-shadow: none;
+    height: 100%;
+}
+
+.ih-item.square.effect10 {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2rem;
+    width: 100%;
+}
+
+.ih-item.square.effect10 .info h3 {
+    margin: 1rem 0 0 0;
+}
+
+.ih-item.square.effect10 .info p {
+    padding: 1rem 0 0 0;
+    color: var(--whait);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 /*
 =================================================
 Footer
@@ -615,7 +637,7 @@ Footer
     border-radius: 1.5rem;
 }
 
-.footer > .container {
+.footer>.container {
     padding-top: 5rem;
     position: relative;
 }
@@ -632,9 +654,7 @@ Footer Left
     margin-right: auto;
 }
 
-.footer-content {
-
-}
+.footer-content {}
 
 .footer__description {
     margin-bottom: 2rem;
@@ -642,17 +662,11 @@ Footer Left
     color: var(--whait);
 }
 
-.footer-social-media {
+.footer-social-media {}
 
-}
+.footer-social-media__link {}
 
-.footer-social-media__link {
-
-}
-
-.footer-social-media__img {
-
-}
+.footer-social-media__img {}
 
 /*
 =================================================
@@ -666,14 +680,13 @@ Footer Right
 
 .footer-list {
     width: 15rem;
-    
-}
-.footer-pages {
 
 }
-.footer-pages__item {
 
-}
+.footer-pages {}
+
+.footer-pages__item {}
+
 .footer-pages__link {
     color: var(--whait)
 }
