@@ -458,8 +458,8 @@ Store
     margin-bottom: 2rem;
     margin-right: 1rem;
     margin-left: 1rem;
-    max-width: 28rem;
-    /* flex-grow: 1; */
+    width: 27rem;
+    flex-grow: 1;
     overflow: hidden;
 }
 
