@@ -175,15 +175,6 @@
     .footer__wrapper {
         display: flex;
     }
-
-    .store__items {
-        justify-content: flex-start;
-    }
-    
-    .store__item {
-        width: 27rem;
-        flex-grow: 0;
-    }
 }
 
 @media (min-width: 1200px) {
