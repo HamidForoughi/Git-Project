@@ -430,37 +430,88 @@ Store
 =================================================
 */
 
-.store {
-    text-align: center;
-    padding: 4rem 0;
-}
-
-.store__title {
-    font-size: 6rem;
-    margin-bottom: 2rem;
-    margin-top: 4rem;
-}
-
-.store__items {
-    margin-bottom: 3rem;
-    margin-left: -1rem;
-    margin-right: -1rem;
+.store__header {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-bottom: 4rem;
+    margin-top: 8rem;
+    align-content: center;
     align-items: center;
-    justify-content: center;
+    position: relative;
 }
 
-.store__item {
-    background-color: var(--whait);
-    border-radius: 2rem;
-    padding: 0rem 1rem 4rem 1rem;
-    margin-bottom: 2rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    width: 27rem;
-    flex-grow: 1;
-    overflow: hidden;
+.store__button {
+    background-color: transparent;
+    border-color: var(--buttoncolor);
+    color: var(--buttoncolor);
+    display: block;
+    text-align: center;
+    margin:auto auto auto 2rem;
+    position: absolute;
+}
+
+.store__button:hover {
+    background-color: var(--buttoncolor);
+    color: var(--black);
+    border-color: var(--buttoncolor);
+}
+
+.store__title-text {
+    margin:auto 3rem auto auto;
+    position: absolute;
+    right: 0;
+    color: var(--fontcolor);
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.store__title-text::after {
+    content: ' ';
+    position: absolute;
+    right: -1rem;
+    bottom: 0.5rem;
+    width: 150%;
+    height: 30%;
+    background-color: rgba(255, 153, 0, 0.3);
+    z-index: -1;
+}
+
+/*
+=================================================
+Swiper Slider
+=================================================
+*/
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding-left: 0!important;
+    padding-right: 0!important;
+    display: none;
+}
+
+.swiper-wrapper {
+    margin-bottom: 5rem;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0rem 1.5rem 3rem 1.5rem;
+    border-radius: 1rem;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .item__banner {
@@ -473,27 +524,6 @@ Store
     height: 100%;
     object-fit: contain;
     overflow: hidden;
-}
-
-.item__icon {
-    background-color: var(--whait);
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    border-radius: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    cursor: pointer;
-}
-
-.item__icon-like {}
-
-.item__icon-like--fill {
-    fill: var(--buttoncolor);
-    stroke: var(--whait);
 }
 
 .item__price {
@@ -511,9 +541,6 @@ Store
     font-weight: 600;
     display: none;
 }
-
-.item__price-text {}
-
 .item__title {
     font-size: 2rem;
     max-width: 36rem;
@@ -538,32 +565,18 @@ Store
     direction: ltr;
     padding: 0 1rem;
 }
-
 .item__link {
     background-color: var(--bgcolor);
     border-color: var(--bgcolor);
     margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .item__link:hover {
     color: var(--fontcolor);
     border-color: var(--buttoncolor);
     background-color: var(--buttoncolor);
-}
-
-.store__button {
-    background-color: transparent;
-    border-color: var(--buttoncolor);
-    color: var(--buttoncolor);
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.store__button:hover {
-    background-color: var(--buttoncolor);
-    color: var(--black);
-    border-color: var(--buttoncolor);
 }
 
 .ih-item.square {
@@ -587,6 +600,54 @@ Store
     color: var(--whait);
     margin-top: auto;
     margin-bottom: auto;
+}
+
+/*
+=================================================
+Store Mobile
+=================================================
+*/
+
+.store-mobile {
+    text-align: center;
+    padding: 0rem 0;
+}
+
+.store-mobile__title {
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+
+.store-mobile__items {
+    margin-bottom: -1.5rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.store-mobile__item {
+    background-color: var(--whait);
+    border-radius: 2rem;
+    padding: 0rem 1rem 4rem 1rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    width: 27rem;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.store-mobile__button {
+    background-color: transparent;
+    border-color: var(--buttoncolor);
+    color: var(--buttoncolor);
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /*

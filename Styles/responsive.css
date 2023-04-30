@@ -168,6 +168,14 @@
         margin-top: 2.5rem;
     }
 
+    .swiper {
+        display: block;
+    }
+
+    .store-mobile {
+        display: none;
+    }
+
     .footer__scroll {
         display: flex;
     }
