@@ -1,0 +1,24 @@
+.form-select, .form-control,.input-group-text {
+    font-size: 1.5rem;
+}
+
+.input-group {
+    margin-top: 2rem;
+}
+
+.input-group-text {
+    font-weight: bold;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.form-select {
+    direction: rtl;
+}
+
+.form-control {
+    direction: ltr;
+}
+
+.btn {
+    font-size: 1.5rem;
+}
