@@ -24,25 +24,33 @@
 
     <div class="container">
 
-        <div class="input-group mb-3">
-            <select class="form-select" id="inputGroupSelect02">
-              <option selected></option>
-              <option value="1">ایسوس</option>
-              <option value="2">لنوو</option>
-              <option value="3">اچ پی</option>
-            </select>
-            <label class="input-group-text" for="inputGroupSelect02">برند لپتاپ</label>
-          </div>
-          
-          <div class="input-group" dir="rtl">
-            <span class="input-group-text">مدل لپتاپ</span>
-            <input type="text" aria-label="laptop-model" class="form-control">
-          </div>
+      <form class="laptop__inputs">
 
-          <div class="input-group mb-3" dir="ltr">
-            <input type="file" class="form-control" id="inputGroupFile02">
-            <label class="input-group-text" for="inputGroupFile02">آپلود عکس</label>
-          </div>
+        <div class="input-group mb-3">
+          <select class="form-select" id="inputGroupSelect02">
+            <option selected></option>
+            <option value="ایسوس">ایسوس</option>
+            <option value="لنوو">لنوو</option>
+            <option value="اچ پی">اچ پی</option>
+          </select>
+          <label class="input-group-text" for="inputGroupSelect02">برند لپتاپ</label>
+        </div>
+        
+        <div class="input-group" dir="rtl">
+          <span class="input-group-text">مدل لپتاپ</span>
+          <input id="laptop-model" type="text" aria-label="laptop-model" class="form-control">
+        </div>
+
+        <!-- <div class="input-group mb-3" dir="ltr">
+          <input type="file" class="form-control" id="inputGroupFile02">
+          <label class="input-group-text" for="inputGroupFile02">آپلود عکس</label>
+        </div> -->
+
+        <input id="submit" class="btn btn-primary" type="submit" value="Submit">
+
+      </form>
+
+        
 
     </div>
 

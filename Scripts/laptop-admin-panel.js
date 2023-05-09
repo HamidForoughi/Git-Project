@@ -1,15 +1,31 @@
 const $ = document
-const laptopNameElem = $.querySelector('.laptop-name__input')
-const laptopNameInput = laptopNameElem.innerHTML
+const laptopBrandInput = $.getElementById('inputGroupSelect02')
+const laptopModelInput = $.getElementById('laptop-model')
+const submitButton = $.querySelector('.laptop__inputs')
 
-console.log(laptopNameInput)
+submitButton.addEventListener('submit', event => {
+    event.preventDefault()
 
+    const laptopData = {
+        laptopBrand: laptopBrandInput.value,
+        laptopMOdel: laptopModelInput.value,
+    }
 
-const laptopStore = [
-    {id: 1, name: laptopNameInput, title: 'لپ تاپ 15.6 اینچی لنوو', img: './Images/Laptops/laptop1-min.jpg', cpu: 'Intel Celeron N4020', gpu: 'آنبورد', ram: 4, ramType: 'DDR4', storageAmountHDD: 1, storageDesHDD: 'ترابایت', storageTypeHDD: 'HDD', storageAmountSSD: 0, storageDesSSD: 'گیگابایت', storageTypeSSD: 'SSD', screenSize: '15.6 اینچ', screenType: 'TN', screenResolution: 'HD|1366x768', count: 99, price: 9_980_000},
-    {id: 2, name: 'Asus X543MA-GQ1012', title: 'لپ تاپ 15.6 اینچی ایسوس', img: './Images/Laptops/laptop2-min.jpg', cpu: 'Intel Celeron N4020', gpu: 'آنبورد', ram: 4, ramType: 'DDR4', storageAmountHDD: 1, storageDesHDD: 'ترابایت', storageTypeHDD: 'HDD', storageAmountSSD: 0, storageDesSSD: 'گیگابایت', storageTypeSSD: 'SSD', screenSize: '15.6 اینچ', screenType: 'TN', screenResolution: 'HD|1366x768', count: 99, price: 12_890_000},
-    {id: 3, name: 'Lenovo IdeaPad 3 15ITL6', title: 'لپ تاپ 15.6 اینچی لنوو', img: './Images/Laptops/laptop3-min.jpg', cpu: 'Intel Core i5-1155G7', gpu: 'Nvidia MX350', ram: 8, ramType: 'DDR4', storageAmountHDD: 1, storageDesHDD: 'ترابایت', storageTypeHDD: 'HDD', storageAmountSSD: 0, storageDesSSD: 'گیگابایت', storageTypeSSD: 'SSD', screenSize: '15.6 اینچ', screenType: 'TN', screenResolution: 'FullHD|1920x1080', count: 99, price: 25_440_000},
-    {id: 4, name: 'Asus TUF-FX506HC-F15-153050', title: 'لپ تاپ 15.6 اینچی ایسوس', img: './Images/Laptops/laptop4-min.jpg', cpu: 'Intel Core i5-11400H', gpu: 'Nvidia RTX 3050', ram: 8, ramType: 'DDR4', storageAmountHDD: 0, storageDesHDD: 'گیگابایت', storageTypeHDD: 'SSD', storageAmountSSD: 512, storageDesSSD: 'گیگابایت', storageTypeSSD: 'SSD', screenSize: '15.6 اینچ', screenType: 'TN', screenResolution: 'FullHD|1920x1080', count: 99, price: 40_800_000},
-    {id: 5, name: 'Lenovo Notebook V15 G2 ITL', title: 'لپ تاپ 15.6 اینچی لنوو', img: './Images/Laptops/laptop5-min.jpg', cpu: 'Intel Core i3-1115G4', gpu: 'آنبورد', ram: 4, ramType: 'DDR4', storageAmountHDD: 0, storageDesHDD: 'گیگابایت', storageTypeHDD: 'SSD', storageAmountSSD: 256, storageDesSSD: 'گیگابایت', storageTypeSSD: 'SSD', screenSize: '15.6 اینچ', screenType: 'TN', screenResolution: 'FullHD|1920x1080', count: 99, price: 15_280_000},
-    {id: 6, name: 'Lenovo IdeaPad 3 15ITL6', title: 'لپ تاپ 15.6 اینچی لنوو', img: './Images/Laptops/laptop6-min.jpg', cpu: 'Intel Core i3-1115G4', gpu: 'آنبورد', ram: 8, ramType: 'DDR4', storageAmountHDD: 0, storageDesHDD: 'گیگابایت', storageTypeHDD: 'SSD', storageAmountSSD: 256, storageDesSSD: 'گیگابایت', storageTypeSSD: 'SSD', screenSize: '15.6 اینچ', screenType: 'TN', screenResolution: 'FullHD|1920x1080', count: 99, price: 20_980_000},
-]
+    fetch('https://hamid-foroughi-default-rtdb.firebaseio.com/laptops.json', {
+        method: 'POST',
+        headers: {
+            'Content-type': 'application/json'
+        },
+        body: JSON.stringify(laptopData)
+    })
+    .then(res => {
+        console.log(res);
+        clearData()
+    })
+    .catch(err => console.log(err))
+})
+
+function clearData() {
+    laptopBrandInput = ''
+    laptopModelInput = ''
+}
