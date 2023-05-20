@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laptop Admin Panel</title>
+  <link rel="icon" href="../Images/Icons/preact-svgrepo-com.svg">
+  <link rel="stylesheet" href="../Vendor/BootStrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../Vendor/FontAwsome/all.min.css">
+  <link rel="stylesheet" href="../Vendor/Wow/animate.min.css" />
+  <link rel="stylesheet" href="../Vendor/SwiperSlider/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../Vendor/iHover/ihover.min.css">
+  <link rel="stylesheet" href="../Styles/reset.css">
+  <link rel="stylesheet" href="../Styles/fontiran.css">
+  <link rel="stylesheet" href="../Fonts/style.css">
+  <link rel="stylesheet" href="../Styles/app.css">
+  <link rel="stylesheet" href="../Styles/laptop-admin-panel/laptop-admin-panel.css">
+  <link rel="stylesheet" href="../Styles/responsive.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h2 class="title">فرم ورود اطلاعات</h2>
+    <hr>
+    <br>
+
+    <div class="wrapper">
+
+      <form id="laptop-form" name="laptop-form">
+
+        <div class="form-group">
+          <label>نام فارسی لپتاپ:</label>
+          <input type="text" id="laptop-name" name="laptop-name" value="لپتاپ 15.6 اینچی لنوو">
+        </div>
+
+        <div class="form-group" dir="rtl">
+          <label for="laptop-brand">برند لپتاپ:</label>
+          <select id="laptop-brand" aria-label="Default select example">
+            <option value="انتخاب کنید">انتخاب کنید</option>
+            <option value="Lenovo">لنوو</option>
+            <option value="Asus">ایسوس</option>
+            <option value="HP">اچ پی</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="laptop-model">مدل لپتاپ:</label>
+          <input type="text" id="laptop-model" name="laptop-model">
+        </div>
+
+        <!-- <div class="form-group">
+          <label for="laptop-model">عکس لپتاپ:</label>
+          <input type="file" class="form-control" id="inputGroupFile02" accept="image/jpeg,image/png">
+        </div> -->
+
+        <div class="form-group">
+          <label for="processor-brand">شرکت سازنده پردازنده:</label>
+          <select id="processor-brand" name="processor-brand">
+            <option value="انتخاب کنید">انتخاب کنید</option>
+            <option value="Intel">Intel</option>
+            <option value="AMD">AMD</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="processor-class">کلاس پردازنده:</label>
+          <select id="processor-class" name="processor-class">
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="processor-model">مدل پردازنده:</label>
+          <input type="text" id="processor-model" name="processor-model">
+        </div>
+
+        <div class="form-group">
+          <label for="graphic-brand">شرکت سازنده گرافیک:</label>
+          <select id="graphic-brand" name="graphic-brand">
+            <option value="">انتخاب کنید</option>
+            <option value="Intel">Intel</option>
+            <option value="Nvidia">Nvidia</option>
+            <option value="AMD">AMD</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="graphic-model">مدل گرافیک:</label>
+          <input type="text" id="graphic-model" name="graphic-model">
+        </div>
+
+        <div class="form-group">
+          <label for="ram-amount">مقدار و نوع رم:</label>
+          <select id="ram-amount" name="ram-amount">
+            <option value="">انتخاب کنید</option>
+            <option value="4 گیگابایت">4GB</option>
+            <option value="8 گیگابایت">8GB</option>
+            <option value="16 گیگابایت">16GB</option>
+            <option value="32 گیگابایت">32GB</option>
+          </select>
+          <select id="ram-type" name="ram-type">
+            <option value="">انتخاب کنید</option>
+            <option value="DDR4">DDR4</option>
+            <option value="DDR5">DDR5</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="storage-size">مقدار و سایز حافظه:</label>
+          <select id="storage-size" name="storage-size">
+            <option value="">انتخاب کنید</option>
+            <option value="512 گیگابایت">512GB</option>
+            <option value="1 ترابایت">1TB</option>
+            <option value="2 ترابایت">2TB</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="storage-type">نوع حافظه:</label>
+          <select name="storage-type" id="storage-type">
+            <option value="">انتخاب کنید</option>
+            <option value="SSD">SSD</option>
+            <option value="HDD">HDD</option>
+          </select>
+
+        </div>
+
+        <div class="form-group">
+          <label for="screen-size">اندازه صفحه نمایش به اینچ:</label>
+          <select id="screen-size" name="screen-size">
+            <option value="">انتخاب کنید</option>
+            <option value="13.3 اینچ">13.3 اینچ</option>
+            <option value="14 اینچ">14 اینچ</option>
+            <option value="15.6 اینچ">15.6 اینچ</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="screen-type">نوع صفحه نمایش:</label>
+          <select name="screen-type" id="screen-type">
+            <option value="">انتخاب کنید</option>
+            <option value="TN">TN</option>
+            <option value="IPS">IPS</option>
+            <option value="OLED">OLED</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="screen-resolution">رزولوشن صفحه نمایش به پیکسل:</label>
+          <select id="screen-resolution" name="screen-resolution">
+            <option value="">انتخاب کنید</option>
+            <option value="HD|1366x788">HD|1366x788</option>
+            <option value="FullHD|1920x1080">FullHD|1920x1080</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>قیمت لپتاپ:</label>
+          <input type="text" id="laptop-price" name="laptop-price">
+        </div>
+
+        <button id="submit" type="submit" class="btn btn-outline-success btn">ثبت</button>
+
+        <br><br><br><br><br>
+
+      </form>
+
+    </div>
+
+    <script src="../Vendor/BootStrap/bootstrap.bundle.min.js"></script>
+    <script src="../Scripts/laptop-admin-panel.js"></script>
+
+</body>
+
+</html>
