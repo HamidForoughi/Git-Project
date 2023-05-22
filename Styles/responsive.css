@@ -28,7 +28,7 @@
     }
 
     .mobile-menu__title {
-        font-size: 2.3rem;
+        font-size: 1.9rem;
     }
 
     .services__item {
@@ -55,6 +55,22 @@
 
     .product__price {
         font-size: 2rem;
+    }
+
+    .login-title {
+        font-size: 2rem;
+    }
+
+    .login-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .footer__description {
+        font-size: 1.3rem;
+    }
+
+    .footer__title {
+        font-size: 1.7rem;
     }
 }
 
