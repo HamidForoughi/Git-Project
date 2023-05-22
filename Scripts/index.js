@@ -31,19 +31,6 @@ const typewriter = new Typewriter(headerTitle, {
 typewriter.typeString('دنیای دیجیتال در دستان شما')
     .start();
 
-// const swiperSlider = new Swiper('.swiper', {
-//     loop: true,
-
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev',
-//     },
-
-//     pagination: {
-//         el: '.swiper-pagination'
-//     }
-// })
-
 const swiper = new Swiper(".mySwiper", {
     loop: true,
 
