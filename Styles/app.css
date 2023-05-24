@@ -47,7 +47,7 @@ a {
 
 .button {
     border: 1.8px solid;
-    padding: 1rem 4rem;
+    padding: 1rem 3rem;
     border-radius: 1.5rem;
     align-items: center;
     justify-content: center;
@@ -563,8 +563,24 @@ Swiper Slider
     text-overflow: ellipsis;
     overflow: hidden;
     direction: ltr;
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
+
+.item__purchase {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 0 3rem;
+}
+
+.svg-inline--fa {
+    height: 1.8em;
+    margin: auto;
+    color: var(--footercolor);
+}
+
 .item__link {
     background-color: var(--bgcolor);
     border-color: var(--bgcolor);
@@ -605,6 +621,8 @@ Swiper Slider
 .ih-item.square.effect10 .info h3 {
     padding: 0.5rem;
 }
+
+
 
 /*
 =================================================
