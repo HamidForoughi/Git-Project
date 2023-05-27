@@ -96,6 +96,3 @@ function clearData() {
     laptopScreenResolution = ''
     laptopPrice = ''
 }
-
-
-
