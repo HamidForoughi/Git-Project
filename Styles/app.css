@@ -56,6 +56,7 @@ a {
     max-width: 19rem;
     font-weight: 600;
     transition: all 110ms;
+    position: relative;
 }
 
 /*
@@ -503,7 +504,7 @@ Swiper Slider
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0rem 1.5rem 3rem 1.5rem;
+    padding: 0rem 1.5rem 7.5rem 1.5rem;
     border-radius: 1rem;
 }
 
@@ -529,8 +530,8 @@ Swiper Slider
 .item__price {
     position: absolute;
     background-color: var(--whait);
-    color: var(--buttoncolor);
-    bottom: -1rem;
+    color: var(--black);
+    bottom: 8.1rem;
     left: 0;
     right: 0;
     width: 15rem;
@@ -538,8 +539,7 @@ Swiper Slider
     padding: 1rem 0;
     border-radius: 1rem;
     font-size: 1.8rem;
-    font-weight: 600;
-    display: none;
+    font-weight: 700;
 }
 .item__title {
     font-size: 2rem;
@@ -557,7 +557,7 @@ Swiper Slider
 .item__caption {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     color: var(--fontcolor);
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -587,6 +587,7 @@ Swiper Slider
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
+    bottom: -4.8rem;
 }
 
 .item__link:hover {
