@@ -64,7 +64,7 @@ submitButton.addEventListener('click', event => {
         laptopPrice: laptopPriceInput.value,
     }
 
-    fetch('https://hamid-foroughi-default-rtdb.firebaseio.com/laptops.json', {
+    fetch('http://localhost:3000/Laptops', {
         method: 'POST',
         headers: {
             'Content-type': 'application/json'
@@ -76,6 +76,19 @@ submitButton.addEventListener('click', event => {
             clearData()
         })
         .catch(err => console.log(err))
+
+    //     fetch('https://hamid-foroughi-default-rtdb.firebaseio.com/laptops.json', {
+    //     method: 'POST',
+    //     headers: {
+    //         'Content-type': 'application/json'
+    //     },
+    //     body: JSON.stringify(laptopData)
+    // })
+    //     .then(res => {
+    //         console.log(res);
+    //         clearData()
+    //     })
+    //     .catch(err => console.log(err))
 })
 
 function clearData() {
@@ -96,3 +109,6 @@ function clearData() {
     laptopScreenResolution = ''
     laptopPrice = ''
 }
+
+
+

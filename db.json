@@ -1,19 +1,64 @@
 {
-  "posts": [
+  "Laptops": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "laptopName": "لپتاپ 15.6 اینچی لنوو",
+      "laptopBrand": "Lenovo",
+      "laptopModel": "a",
+      "laptopCover": "../Images/Laptops/laptop1-min.jpg",
+      "laptopCpuBrand": "Intel",
+      "laptopCpuClass": "Celeron",
+      "laptopCpuModel": "a",
+      "laptopGpuBrand": "Intel",
+      "laptopGpuModel": "a",
+      "laptopRamSize": "4 گیگابایت",
+      "laptopRamType": "DDR4",
+      "laptopStorageSize": "512 گیگابایت",
+      "laptopStorageType": "SSD",
+      "laptopScreenSize": "13.3 اینچ",
+      "laptopScreenType": "TN",
+      "laptopScreenResolution": "HD|1366x788",
+      "laptopPrice": "a",
+      "id": 1
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "laptopName": "لپتاپ 15.6 اینچی لنوو",
+      "laptopBrand": "Asus",
+      "laptopModel": "b",
+      "laptopCover": "../Images/Laptops/laptop1-min.jpg",
+      "laptopCpuBrand": "AMD",
+      "laptopCpuClass": "Ryzen5",
+      "laptopCpuModel": "b",
+      "laptopGpuBrand": "Nvidia",
+      "laptopGpuModel": "b",
+      "laptopRamSize": "8 گیگابایت",
+      "laptopRamType": "DDR5",
+      "laptopStorageSize": "2 ترابایت",
+      "laptopStorageType": "HDD",
+      "laptopScreenSize": "14 اینچ",
+      "laptopScreenType": "IPS",
+      "laptopScreenResolution": "HD|1366x788",
+      "laptopPrice": "b",
+      "id": 2
+    },
+    {
+      "laptopName": "لپتاپ 15.6 اینچی لنوو",
+      "laptopBrand": "انتخاب کنید",
+      "laptopModel": "",
+      "laptopCover": "../Images/Laptops/laptop1-min.jpg",
+      "laptopCpuBrand": "انتخاب کنید",
+      "laptopCpuClass": "",
+      "laptopCpuModel": "",
+      "laptopGpuBrand": "",
+      "laptopGpuModel": "",
+      "laptopRamSize": "",
+      "laptopRamType": "",
+      "laptopStorageSize": "",
+      "laptopStorageType": "",
+      "laptopScreenSize": "",
+      "laptopScreenType": "",
+      "laptopScreenResolution": "",
+      "laptopPrice": "c",
+      "id": 3
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
