@@ -16,12 +16,6 @@ menuItemLink.forEach((item) => {
     })
 })
 
-svgEelem.forEach((svg) => {
-    svg.addEventListener('click', () => {
-        svg.classList.toggle('item__icon-like--fill')
-    })
-})
-
 const typewriter = new Typewriter(headerTitle, {
     loop: false,
     cursor: '',

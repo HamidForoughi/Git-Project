@@ -124,26 +124,26 @@
 
                     <form action="#" class="login-form">
                         <div class="login-form__username">
-                            <input type="text" class="login-form__username-input" placeholder="نام و نام خانوادگی" />
+                            <input type="text" class="login-form__username-input" id="name" placeholder="نام و نام خانوادگی" />
                             <i class="fa fa-user login-form__username-icon"></i>
                         </div>
                         <div class="login-form__username">
-                            <input type="text" class="login-form__username-input" placeholder="نام کاربری" />
+                            <input type="text" class="login-form__username-input" id="username" placeholder="نام کاربری" />
                             <i class="fa fa-user login-form__username-icon"></i>
                         </div>
                         <div class="login-form__username">
-                            <input type="email" class="login-form__username-input" placeholder=" آدرس ایمیل" />
+                            <input type="email" class="login-form__username-input" id="email" placeholder=" آدرس ایمیل" />
                             <i class="fa fa-user login-form__username-icon"></i>
                         </div>
                         <div class="login-form__username">
-                            <input type="text" class="login-form__username-input" placeholder="شماره تماس" />
+                            <input type="text" class="login-form__username-input" id="phone" placeholder="شماره تماس" />
                             <i class="fa fa-user login-form__username-icon"></i>
                         </div>
                         <div class="login-form__password">
-                            <input type="password" class="login-form__password-input" placeholder="رمز عبور" />
+                            <input type="password" class="login-form__password-input" id="password" placeholder="رمز عبور" />
                             <i class="fa fa-lock-open login-form__password-icon"></i>
                         </div>
-                        <button class="login-form__btn" type="submit">
+                        <button class="login-form__btn" type="submit" id="register-btn">
                             <i class="fas fa-sign-out-alt login-form__btn-icon"></i>
                             <span class="login-form__btn-text">ثبت نام</span>
                         </button>
@@ -304,6 +304,8 @@
     <script src="./Vendor/Lodash/lodash.min.js"></script>
     <script src="./Vendor/SwiperSlider/swiper-bundle.min.js"></script>
     <script src="./Scripts/index.js"></script>
+    <script src="./Scripts/funcs/auth.js" type="module"></script>
+    <script src="./Scripts/funcs/register.js" type="module"></script>
 </body>
 
 </html>
