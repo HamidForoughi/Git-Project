@@ -49,14 +49,12 @@ a {
     border: 1.8px solid;
     padding: 1rem 3rem;
     border-radius: 1.5rem;
-    align-items: center;
-    justify-content: center;
     color: var(--black);
-    margin-top: 3rem;
-    max-width: 19rem;
     font-weight: 600;
     transition: all 110ms;
     position: relative;
+    max-width: 18rem;
+    justify-content: center;
 }
 
 /*
@@ -363,6 +361,7 @@ Header Content
     margin-left: auto;
     background-color: var(--buttoncolor);
     border-color: var(--buttoncolor);
+    margin-top: 3rem;
 }
 
 .header-content__link:hover {
@@ -504,7 +503,7 @@ Swiper Slider
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0rem 1.5rem 7.5rem 1.5rem;
+    padding: 0rem 1.5rem 2.5rem 1.5rem;
     border-radius: 1rem;
 }
 
@@ -528,18 +527,14 @@ Swiper Slider
 }
 
 .item__price {
-    position: absolute;
+    position: relative;
     background-color: var(--whait);
     color: var(--black);
-    bottom: 8.1rem;
-    left: 0;
-    right: 0;
-    width: 15rem;
-    margin: 0 auto;
+    margin: auto;
     padding: 1rem 0;
     border-radius: 1rem;
-    font-size: 1.8rem;
     font-weight: 700;
+    text-align: center;
 }
 .item__title {
     font-size: 2rem;
@@ -557,22 +552,27 @@ Swiper Slider
 .item__caption {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 1.5rem;
     color: var(--fontcolor);
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
     direction: ltr;
     padding: 0 2rem;
+    font-size: 2rem;
 }
 
 .item__purchase {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    margin: 0 3rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    font-size: 2.5rem;
+}
+
+.item__purchase>.button {
+    max-width: unset;
+    width: 100%;
 }
 
 .svg-inline--fa {
@@ -584,10 +584,7 @@ Swiper Slider
 .item__link {
     background-color: var(--bgcolor);
     border-color: var(--bgcolor);
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
-    bottom: -4.8rem;
+    margin: auto;
 }
 
 .item__link:hover {
@@ -643,7 +640,7 @@ Store Mobile
 }
 
 .store-mobile__items {
-    margin-bottom: -1.5rem;
+    margin-bottom: 0.5rem;
     margin-left: -1rem;
     margin-right: -1rem;
     display: flex;
@@ -655,7 +652,7 @@ Store Mobile
 .store-mobile__item {
     background-color: var(--whait);
     border-radius: 2rem;
-    padding: 0rem 1rem 7rem 1rem;
+    padding: 0rem 1rem 3rem 1rem;
     margin-bottom: 2rem;
     margin-right: 1rem;
     margin-left: 1rem;

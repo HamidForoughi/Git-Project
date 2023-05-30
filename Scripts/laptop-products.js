@@ -1,4 +1,4 @@
-const laptopProducts = $.querySelector('.store__items');
+const laptopProducts = document.querySelector('.store__items');
 
 window.addEventListener('load', () => {
 
@@ -34,10 +34,13 @@ window.addEventListener('load', () => {
                         </div>
                         <h3 class="item__title">${laptop[1].laptopName}</h3>
                         <h4 class="item__caption">${laptop[1].laptopBrand} ${laptop[1].laptopModel}</h4>
-                        <a href="#" class="button item__link">${laptop[1].laptopPrice} تومان</a>
+                        <div class="item__purchase">
+                            <p class="item__price">${laptop[1].laptopPrice} تومان</p>
+                            <a href="#" class="button item__link">اضافه به سبد خرید</a>
+                        </div>
                     </div>
                 
-                `)
+                `);
             });
         });
 });
