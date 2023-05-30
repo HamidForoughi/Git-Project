@@ -1,22 +1,21 @@
-const $ = document;
-const laptopNameInput = $.getElementById('laptop-name');
-const laptopBrandInput = $.getElementById('laptop-brand');
-const laptopModelInput = $.getElementById('laptop-model');
-const laptopCpuBrandInput = $.getElementById('processor-brand');
-const laptopCpuClassInput = $.getElementById('processor-class');
-const laptopCpuModelInput = $.getElementById('processor-model');
-const graphicBrandInput = $.getElementById('graphic-brand');
-const graphicModelInput = $.getElementById('graphic-model');
-const ramSizeInput = $.getElementById('ram-amount');
-const ramTypeInput = $.getElementById('ram-type');
-const storageSizeInput = $.getElementById('storage-size');
-const storageTypeInput = $.getElementById('storage-type');
-const screenSizeInput = $.getElementById('screen-size');
-const screenTypeInput = $.getElementById('screen-type');
-const screenResolutionInput = $.getElementById('screen-resolution');
-const laptopPriceInput = $.getElementById('laptop-price');
-const submitButton = $.getElementById('submit');
-
+const $ = document.getElementById.bind(document);
+const laptopNameInput = $('laptop-name');
+const laptopBrandInput = $('laptop-brand');
+const laptopModelInput = $('laptop-model');
+const laptopCpuBrandInput = $('processor-brand');
+const laptopCpuClassInput = $('processor-class');
+const laptopCpuModelInput = $('processor-model');
+const graphicBrandInput = $('graphic-brand');
+const graphicModelInput = $('graphic-model');
+const ramSizeInput = $('ram-amount');
+const ramTypeInput = $('ram-type');
+const storageSizeInput = $('storage-size');
+const storageTypeInput = $('storage-type');
+const screenSizeInput = $('screen-size');
+const screenTypeInput = $('screen-type');
+const screenResolutionInput = $('screen-resolution');
+const laptopPriceInput = $('laptop-price');
+const submitButton = $('submit');
 
 const processorClassData = {
     Intel: ['Celeron', 'Pentium', 'Core-i3', 'Core-i5', 'Core-i7'],
@@ -24,26 +23,28 @@ const processorClassData = {
 };
 
 laptopCpuBrandInput.addEventListener('change', () => {
-
     if (laptopCpuBrandInput.value === 'انتخاب کنید') {
         laptopCpuClassInput.innerHTML = '';
-        laptopCpuClassInput.innerHTML += `<option></option>`;
+        laptopCpuClassInput.innerHTML += `<option value=""></option>`;
     } else {
         const processorBrandName = laptopCpuBrandInput.value;
         const processorClassName = processorClassData[processorBrandName];
 
         laptopCpuClassInput.innerHTML = '';
+        
+        laptopCpuClassInput.appendChild(document.createElement('option'));
 
-        processorClassName.forEach((cpuClass) => {
-            laptopCpuClassInput.innerHTML += `<option>${cpuClass}</option>`;
+        processorClassName.forEach(cpuClass => {
+            const option = document.createElement('option');
+            option.value = cpuClass;
+            option.textContent = cpuClass;
+            laptopCpuClassInput.appendChild(option);
         });
     }
-
 });
 
 submitButton.addEventListener('click', event => {
     event.preventDefault();
-
     const laptopData = {
         laptopName: laptopNameInput.value,
         laptopBrand: laptopBrandInput.value,
@@ -63,12 +64,9 @@ submitButton.addEventListener('click', event => {
         laptopScreenResolution: screenResolutionInput.value,
         laptopPrice: laptopPriceInput.value,
     };
-
     fetch('http://localhost:3000/Laptops', {
         method: 'POST',
-        headers: {
-            'Content-type': 'application/json'
-        },
+        headers: {'Content-type': 'application/json'},
         body: JSON.stringify(laptopData)
     })
         .then(res => {
@@ -76,39 +74,11 @@ submitButton.addEventListener('click', event => {
             clearData();
         })
         .catch(err => console.log(err));
-
-    //     fetch('https://hamid-foroughi-default-rtdb.firebaseio.com/laptops.json', {
-    //     method: 'POST',
-    //     headers: {
-    //         'Content-type': 'application/json'
-    //     },
-    //     body: JSON.stringify(laptopData)
-    // })
-    //     .then(res => {
-    //         console.log(res);
-    //         clearData()
-    //     })
-    //     .catch(err => console.log(err))
 });
 
 function clearData() {
-    laptopName = '';
-    laptopBrand = '';
-    laptopModel = '';
-    laptopCover = '';
-    laptopCpuBrand = '';
-    laptopCpuClass = '';
-    laptopCpuModel = '';
-    laptopGpuBrand = '';
-    laptopGpuModel = '';
-    laptopRamSize = '';
-    laptopRamType = '';
-    laptopStorageSize = '';
-    laptopStorageType = '';
-    laptopScreenType = '';
-    laptopScreenResolution = '';
-    laptopPrice = '';
+    const inputs = document.querySelectorAll('input, select');
+    inputs.forEach(input => {
+        input.value = '';
+    });
 }
-
-
-
