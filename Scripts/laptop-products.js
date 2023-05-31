@@ -2,7 +2,7 @@ const laptopProducts = document.querySelector('.store__items');
 
 window.addEventListener('load', () => {
 
-    fetch('https://hamid-foroughi-default-rtdb.firebaseio.com/laptops.json')
+    fetch('https://donyaye-digital.iran.liara.run/laptops')
         .then(res => res.json())
         .then(data => {
             let laptopData = Object.entries(data);
